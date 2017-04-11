@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zas-d7-JRD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zas-d7-JRD">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -68,16 +68,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Angry " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1W-e4-n0T">
+                                <rect key="frame" x="122.5" y="434" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth year: 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dx-W6-BWn">
+                                <rect key="frame" x="127" y="475" width="121" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="k1W-e4-n0T" firstAttribute="centerX" secondItem="hBj-Ra-j7d" secondAttribute="centerX" id="KCq-fe-wug"/>
+                            <constraint firstItem="k1W-e4-n0T" firstAttribute="top" secondItem="bam-es-Lai" secondAttribute="bottom" constant="20" id="OM3-Sk-0hp"/>
                             <constraint firstItem="mhU-ao-BLb" firstAttribute="centerX" secondItem="hBj-Ra-j7d" secondAttribute="centerX" id="YRa-jj-iwd"/>
                             <constraint firstItem="bam-es-Lai" firstAttribute="centerX" secondItem="hBj-Ra-j7d" secondAttribute="centerX" id="cRU-mg-w59"/>
                             <constraint firstItem="bam-es-Lai" firstAttribute="top" secondItem="mhU-ao-BLb" secondAttribute="bottom" constant="50" id="gIN-7y-0wr"/>
+                            <constraint firstItem="7dx-W6-BWn" firstAttribute="top" secondItem="k1W-e4-n0T" secondAttribute="bottom" constant="20" id="y1J-u7-wS2"/>
                             <constraint firstItem="mhU-ao-BLb" firstAttribute="top" secondItem="Pyq-Wc-OxH" secondAttribute="bottom" constant="40" id="yXx-I5-S8s"/>
+                            <constraint firstItem="7dx-W6-BWn" firstAttribute="centerX" secondItem="hBj-Ra-j7d" secondAttribute="centerX" id="yuK-1A-jfh"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="7dx-W6-BWn" id="o6d-RH-xmt"/>
+                        <outlet property="categoryLabel" destination="k1W-e4-n0T" id="yYW-kN-hCg"/>
                         <outlet property="definitionLabel" destination="bam-es-Lai" id="yjt-zD-JCN"/>
                         <outlet property="emojiLabel" destination="mhU-ao-BLb" id="h4X-zn-BhP"/>
                     </connections>
